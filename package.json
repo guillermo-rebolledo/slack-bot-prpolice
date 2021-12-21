@@ -1,0 +1,31 @@
+{
+  "name": "slack-bot-prpolice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillermo-rebolledo/slack-bot-prpolice.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Guillermo Rebolledo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guillermo-rebolledo/slack-bot-prpolice/issues"
+  },
+  "homepage": "https://github.com/guillermo-rebolledo/slack-bot-prpolice#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.8.1",
+    "date-fns": "^2.27.0",
+    "octokit": "^1.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
