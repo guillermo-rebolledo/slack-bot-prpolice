@@ -5,6 +5,7 @@ const format = require("date-fns/format");
 const isBefore = require("date-fns/isBefore");
 const dateSub = require("date-fns/sub");
 require("dotenv").config();
+const { handleLeaderboardCommand } = require("./handlers/leaderboard");
 
 const OWNER = "cerbyinc";
 const REPO = "platform";
@@ -101,6 +102,8 @@ app.command("/list", async ({ command, ack, say }) => {
     await say("There was an unexpected error :(");
   }
 });
+
+app.command("/review-leaderboard", handleLeaderboardCommand);
 
 app.command("/pr-summary", async ({ ack, say, client, payload }) => {
   try {
